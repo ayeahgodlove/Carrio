@@ -1,0 +1,55 @@
+.main-content {
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+    background: #f5f5f5;
+    display: fixed;
+
+    .heading {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        
+        h1 {
+            color: #444;
+        }
+        .big-letter {
+            // font-size: 10rem;
+            color: #444;
+        }
+    }
+    .article {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 2rem;
+
+        .regulate {
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            margin-bottom: 1.5rem;
+        }
+        
+        #query {
+            height: 50px !important;
+            width: 70%;
+        }
+        .links{
+            list-style: none;
+
+            li {
+                padding: 0.5rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #111111;
+                }
+            }
+        }
+        
+    }
+    
+}

@@ -9,42 +9,135 @@
     <meta name="author" content="AyeahGodloveAkoni">
     <!-- style sheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+     <!-- splash -->
+     <div id="splash">
+        <h1 class="text-center text-info">loading...</h1>
+        <img class="" src="img/basicloader.gif" alt="" />
+        <!-- <button type="button" class="btn btn-primary.spinner-border .spinner-border-sm">Loading...</button> -->
+    </div>
     <header>
-        <div class="navbar">
-            <div class="navbar-brand">
-                <h1 class="logo">Carrio</h1>
+        <div class="navbar navbar navbar-expand-lg container">
+            <!-- brand logo -->
+            <div class="navbar-brand d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                <span class="logo">Carrio</span>
+                <!-- <span class="logo">Search</span> -->
             </div>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-            </ul>
+            <button type="button" class="navbar-toggler border-0" data-toggle="collapse" data-target="#myNavbar">
+                <!-- <span class="navbar-toggler-icon hamberger-icon"></span> -->
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </button>
+            <div class="collapse navbar-collapse mx-0" id="myNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex flex-sm-row justify-content-center align-items-center">
+                            <i class="fas fa-home fa-2x pl-2"></i>
+                            <span class="mx-sm-3">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex flex-sm-row justify-content-center align-items-center">
+                            <i class="fas fa-bell fa-2x text-success pl-5"></i>
+                            <span class="mx-sm-3">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex flex-sm-row justify-content-center align-items-center">
+                            <i class="fas fa-share-alt fa-2x text-info pl-5"></i>
+                            <span class="mx-sm-3">Invite Friends</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex flex-sm-row justify-content-center align-items-center">
+                            <i class="fas fa-heart fa-2x text-danger"></i>
+                            <span class="mx-sm-3">Vote</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
 
         </div>
     </header>
+
+    <!-- main content -->
+    <section class="main-content">
+        <div class="heading">
+           <h1> <span class="display-1 big-letter">C</span>arrier
+            <span class="display-1 big-letter">O</span>rientation</h1>
+       </div>
+        <div class="article">
+            <!-- search input -->
+            <div class="search">
+                <form action="/dist/" method="post">
+                     <!-- search filter -->
+                    <div class="regulate w-100">
+                        <label for="filter" class="text-info mr-4">Filter your</label>
+                        <select class="form-control w-50" name="filter">
+                            <option value="Engineering">Engineering</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Science">Science</option>
+                            <option value="Phylosophy">Phylosophy</option>
+                            <option selected disabled>--Select an Option--</option>
+                          </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" name="query" id="query"
+                         placeholder="search carreer's ..." class="form-control" />
+                         <div class="input-group-append">
+                            <button class="btn btn-danger" type="button">Let's Go...</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- links -->
+            <ul class="links pb-5 d-flex flex-row justify-content-start">
+                <li>
+                   <i class="fas fa-flag fa-2x mr-3 text-info"></i><a href="">Report Issues</a>
+                </li>
+                <li>
+                   <i class="fas fa-bug fa-2x mr-3 text-info"></i><a href="">Report Bug</a>
+                </li>
+                <li>
+                   <i class="fas fa-users fa-2x mr-3 text-info"></i><a href="">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+
+        <article>
+            
+        </article>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <ul class="links d-flex justify-content-center">
+            <li><a href=""><i class="fab fa-twitter fa-3x text-danger"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-3x text-danger"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook fa-3x text-danger"></i></a></li>
+            <li><a href=""><i class="fab fa-github fa-3x text-danger"></i></a></li>
+        </ul>
+    </footer>
     
     <!-- scripts -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5602556044.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js').then(function(reg){
+              console.log('Success: ', reg);
+          }).catch(function(err){
+              console.log('error: ', err);
+          });
+      }
+    </script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Fjalla+One|Hind&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import "header";
+@import "section-landing-page";
+@import "footer";
+@import "splash";
+@import "media_queries";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+

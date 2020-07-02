@@ -1,0 +1,56 @@
+  /*    Always add your media queries inline for better performance*/
+    /*smaller mobile devices*/
+     /*quite larger devices*/
+     @media screen and (max-width: 768px) {
+        /* code here  */
+        /* code here  */
+        .main-content .heading {
+
+            h1 {
+                font-size: 25px;
+            }
+            .big-letter {
+                font-size: 45px;
+            }
+        }
+
+        footer {
+            .links {
+                li {
+                    font-size: 16px;
+                }
+            }
+        } 
+    }
+      
+    @media screen and (max-width: 550px) {
+        /* code here  */
+        .main-content .heading {
+
+            h1 {
+                font-size: 20px;
+            }
+            .big-letter {
+                font-size: 45px;
+            }
+        }
+
+        footer {
+            .links {
+                li {
+                    font-size: 14px;
+                }
+            }
+        } 
+      }
+      
+     
+      /*larger devices*/
+      @media screen and (max-width: 992px) {
+        /* code here  */
+      }
+      
+      /* extra-large devices*/
+      @media screen and (max-width: 1200px) {
+        /* code here  */
+      }

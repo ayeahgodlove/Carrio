@@ -1,0 +1,27 @@
+#splash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+	z-index: 99;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#splash h1 {
+    z-index: 80;
+}
+#splash img {
+    width: 300px;
+    // position: absolute;
+}
+
+#splash.fade {
+	opacity: 0;
+}

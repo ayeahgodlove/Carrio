@@ -1,0 +1,28 @@
+header {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-family: 'Hind','Fjalla One', sans-serif;
+    font-size: 16px;
+
+    .logo {
+        font-family: 'Monoton', cursive;
+        font-size: 30px;
+    }
+    // btn-line
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #111111;
+        transition: all 0.5s ease-out;
+    }
+    // humberger-icon
+    .hamberger-icon {
+        color: #141313 !important;
+    }
+    // color of links
+    .nav-link span {
+        color: #141313;
+    }
+}

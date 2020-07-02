@@ -1,0 +1,16 @@
+footer {
+    margin: 0;
+    padding: 0;
+    .links{
+        list-style: none;
+        margin-top: 0;
+        width: 70%;
+        margin: 0 auto;
+        li {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+}

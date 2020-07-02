@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran|Fjalla+One|Hind&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
+header {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font-family: "Hind", "Fjalla One", sans-serif;
+  font-size: 16px;
+}
+header .logo {
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+}
+header .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #111111;
+  transition: all 0.5s ease-out;
+}
+header .hamberger-icon {
+  color: #141313 !important;
+}
+header .nav-link span {
+  color: #141313;
+}
+
+.main-content {
+  padding: 0;
+  margin: 0;
+  font-family: "Catamaran", sans-serif;
+  background: #f5f5f5;
+  display: fixed;
+}
+.main-content .heading {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.main-content .heading h1 {
+  color: #444;
+}
+.main-content .heading .big-letter {
+  color: #444;
+}
+.main-content .article {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.main-content .article .regulate {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  margin-bottom: 1.5rem;
+}
+.main-content .article #query {
+  height: 50px !important;
+  width: 70%;
+}
+.main-content .article .links {
+  list-style: none;
+}
+.main-content .article .links li {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-content .article .links li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+footer .links {
+  list-style: none;
+  margin-top: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .links li {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#splash h1 {
+  z-index: 80;
+}
+
+#splash img {
+  width: 300px;
+}
+
+#splash.fade {
+  opacity: 0;
+}
+
+/*    Always add your media queries inline for better performance*/
+/*smaller mobile devices*/
+/*quite larger devices*/
+@media screen and (max-width: 768px) {
+  /* code here  */
+  /* code here  */
+  .main-content .heading h1 {
+    font-size: 25px;
+  }
+  .main-content .heading .big-letter {
+    font-size: 45px;
+  }
+
+  footer .links li {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* code here  */
+  .main-content .heading h1 {
+    font-size: 20px;
+  }
+  .main-content .heading .big-letter {
+    font-size: 45px;
+  }
+
+  footer .links li {
+    font-size: 14px;
+  }
+}
+/*larger devices*/
+@media screen and (max-width: 992px) {
+  /* code here  */
+}
+/* extra-large devices*/
+@media screen and (max-width: 1200px) {
+  /* code here  */
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */
